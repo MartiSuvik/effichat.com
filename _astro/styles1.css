@@ -1,0 +1,270 @@
+/* Basic Reset */
+html {
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    font-family: Mulish, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+    font-feature-settings: normal;
+    font-variation-settings: normal;
+    -webkit-tap-highlight-color: transparent
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+/* Keyframes for fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Apply fade-in animation */
+.fade-in {
+    animation: fadeIn 1.5s ease-out;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: .875rem;
+    font-weight: inherit;
+}
+
+b,
+strong {
+    font-weight: bolder
+}
+
+code,
+kbd,
+samp,
+pre {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+    font-feature-settings: normal;
+    font-variation-settings: normal;
+    font-size: .875rem;
+}
+
+small {
+    font-size: 80%
+}
+
+sub,
+sup {
+    font-size: .875rem;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-feature-settings: inherit;
+    font-variation-settings: inherit;
+    font-size: .875rem;
+    font-weight: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+    margin: 0;
+    padding: 0
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit
+}
+
+button,
+select {
+    text-transform: none
+}
+
+button,
+input:where([type=button]),
+input:where([type=reset]),
+input:where([type=submit]) {
+    -webkit-appearance: button;
+    background-color: transparent;
+    background-image: none
+}
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+    height: auto
+}
+
+
+body {
+    background-color: #ffffff;
+    color: #333;
+    margin: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.navbar .logo img {
+    height: 50px;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 100%;
+    gap: 1.5rem;
+    max-width: 80rem;
+}
+
+.navbar .nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar .btn {
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: #ffffff;
+    transition: background-color 0.3s ease;
+    font-size: .875rem;
+    line-height: 1.5rem
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .btn {
+        animation: button-pop var(--animation-btn, .25s) ease-out
+    }
+}
+
+.btn:active:hover,
+.btn:active:focus {
+    animation: button-pop 0s ease-out;
+    transform: scale(var(--btn-focus-scale, .97))
+}
+
+@keyframes button-pop {
+    0% {
+        transform: scale(var(--btn-focus-scale, .98))
+    }
+    40% {
+        transform: scale(1.02)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+.navbar .btn-primary {
+    background-color: oklch(95.1873% .024084 248.081197 / 1);
+}
+
+.navbar .btn-primary:hover {
+    background-color: oklch(84.71% .024084 248.081197 / 1);
+}
+
+.navbar .btn-accent {
+    background-color: oklch(82.4405% .09922 33.04426 /1); 
+}
+
+.navbar .btn-accent:hover {
+    background-color: oklch(72.06% .09922 33.04426 /1);
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.hero h1 {
+    margin-bottom: 10px;
+    font-size: 3.75rem;
+    line-height: 1;
+}
+
+.hero p {
+    font-size: 1.2em;
+    font-weight: 200;
+}
+
+/* Video Catalog Styles */
+.video-catalog {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.video-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.video-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.video-item h3 {
+    padding: 15px;
+    font-size: 1.5em;
+}
+
+.video-item .btn-play {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    background-color: #737373;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.video-item .btn-play:hover {
+    background-color: #8f8f8f;
+}
+
+.video-item:hover {
+    transform: translateY(-5px);
+}

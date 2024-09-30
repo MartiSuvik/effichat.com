@@ -1,0 +1,145 @@
+/* Basic Reset */
+* {
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    font-family: Mulish, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+    font-feature-settings: normal;
+    font-variation-settings: normal;
+    -webkit-tap-highlight-color: transparent
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.navbar .logo img {
+    height: 50px;
+}
+
+.navbar .nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar .btn {
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: #ffffff;
+    transition: background-color 0.3s ease;
+    font-size: .875rem;
+    line-height: 1.5rem
+}
+
+.navbar .btn-primary {
+    background-color: oklch(95.1873% .024084 248.081197 / 1);
+}
+
+.navbar .btn-primary:hover {
+    background-color: oklch(84.71% .024084 248.081197 / 1);
+}
+
+.navbar .btn-accent {
+    background-color: oklch(82.4405% .09922 33.04426 /1); 
+}
+
+.navbar .btn-accent:hover {
+    background-color: oklch(72.06% .09922 33.04426 /1);
+}
+
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #fff;
+    color: #000;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+/* Request Demo Form */
+.request-demo-form {
+    max-width: 600px;
+    margin: 30px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.request-demo-form .form-group {
+    margin-bottom: 20px;
+}
+
+.request-demo-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+
+.request-demo-form input,
+.request-demo-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+}
+
+.request-demo-form input:focus,
+.request-demo-form textarea:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.request-demo-form .checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.request-demo-form .checkbox-group label {
+    font-weight: normal;
+    font-size: 0.9em;
+}
+
+.request-demo-form .btn-submit {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: oklch(95.1873% .024084 248.081197 / 1);
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.request-demo-form .btn-submit:hover {
+    background-color: oklch(84.71% .024084 248.081197 / 1);
+}

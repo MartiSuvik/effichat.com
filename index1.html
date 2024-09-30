@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>See Demos</title>
+    <link rel="stylesheet" href="_astro/styles1.css">
+</head>
+<body class="flex items-center justify-between w-full gap-6 mx-auto max-w-7xl">
+
+    <nav class="p-4 sm:p-5 navbar" style="position:relative;z-index:2;">
+        <div class="logo flex items-center justify-between w-full gap-6 mx-auto max-w-7xl flex">
+            <!-- Logo on the Left -->
+            <a class="text-xl font-bold sm:text-2xl" href="/" data-sb-field-path=".title">
+                <img src="./_astro/EffiChat (1).png" style="height:50px;" alt="Company Logo">
+            </a>
+    
+            <!-- Navigation Links (Buttons) on the Right -->
+            <div class="flex space-x-4 nav-links" style="gap:1rem;">
+                <a class="btn btn-accent" href="index.html">Home</a>
+                <a class="btn btn-primary" href="index2.html">Request Demo</a>
+            </div>
+        </div>
+    </nav>
+
+    <style>
+        /* Include CSS from above */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 1.5s ease-out;
+        }
+    </style>
+
+    <header class="hero">
+        <h1 class="fade-in"><strong>Demos</strong></h1>
+        <p class="fade-in">Explore our range of agent demos below</p>
+    </header>
+    <section class="video-catalog">
+        <div class="video-item">
+            <img src="/_astro/1.png" alt="Demo 4 Thumbnail">
+            <h3 class="fade-in">Product Recommendations</h3>
+            <a href="/_astro/Going up.mp4" class="btn btn-play">Watch</a>
+        </div>
+        <div class="video-item">
+            <img src="/_astro/2.png" alt="Demo 1 Thumbnail">
+            <h3 class="fade-in">Lead Capture</h3>
+            <a href="" class="btn btn-play">Watch</a>
+        </div>
+        <div class="video-item">
+            <img src="/_astro/4.png" alt="Demo 2 Thumbnail">
+            <h3 class="fade-in">Customer Support</h3>
+            <a href="" class="btn btn-play">Watch</a>
+        </div>
+        <div class="video-item">
+            <img src="/_astro/3.png" alt="Demo 3 Thumbnail">
+            <h3 class="fade-in">Appointment Setter</h3>
+            <a href="" class="btn btn-play">Watch</a>
+        </div>
+        </div>
+        <!-- Add more videos as needed -->
+    </section>
+</body>
+</html>

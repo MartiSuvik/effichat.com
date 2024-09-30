@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Demo</title>
+    <link rel="stylesheet" href="/_astro/styles2.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="/">
+                <img src="./_astro/EffiChat (1).png" alt="EffiChat Logo">
+            </a>
+        </div>
+        <div class="nav-links">
+            <a class="btn btn-primary" href="/index.html">Home</a>
+            <a class="btn btn-accent" href="/index1.html">See Demo</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Request a Demo</h1>
+        <p>Fill out the form below to schedule a demo</p>
+    </header>
+
+    <section class="request-demo-form">
+        <form action="/submit-demo-request" method="POST">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Company Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="company">Company Name</label>
+                <input type="text" id="company" name="company" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Please let us know what you're interested in?</label>
+                <textarea id="message" name="message" rows="4" placeholder="Tell us more about your needs..."></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-submit">Request Demo</button>
+            </div>
+        </form>
+    </section>
+
+</body>
+</html>
